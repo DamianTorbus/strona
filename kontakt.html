@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt - Eat & Fit</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Zegar -->
+    <div id="clock" class="clock"></div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Kontakt</h1>
+        <form>
+            <label for="name">Imię:</label>
+            <input type="text" id="name" required placeholder="Wprowadź swoje imię" />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required placeholder="Wprowadź swój adres e-mail" />
+
+            <label for="subject">Temat wiadomości:</label>
+            <select id="subject" required>
+                <option value="">Wybierz temat</option>
+                <option value="zapytanie">Ogólne zapytanie</option>
+                <option value="plany">Indywidualne plany dietetyczne</option>
+                <option value="sportowcy">Programy dla sportowców</option>
+                <option value="opinie">Opinie</option>
+                <option value="współpraca">Współpraca</option>
+            </select>
+
+            <label for="message">Wiadomość:</label>
+            <textarea id="message" required placeholder="Wprowadź swoją wiadomość"></textarea>
+
+            <button type="submit">Wyślij</button>
+        </form>
+
+        <section>
+            <h2>Najczęściej zadawane pytania</h2>
+            <ul>
+                <li>
+                    <strong>Jakie są korzyści z korzystania z planu dietetycznego?</strong>
+                    – Nasze plany są dostosowane do Twoich indywidualnych potrzeb, co zwiększa ich skuteczność.
+                </li>
+                <li>
+                    <strong>Czy mogę skonsultować się z dietetykiem online?</strong>
+                    – Tak, oferujemy konsultacje w formie zdalnej.
+                </li>
+                <li>
+                    <strong>Jak długo trwa proces tworzenia planu dietetycznego?</strong>
+                    – Zwykle trwa to od 3 do 5 dni roboczych.
+                </li>
+                <li>
+                    <strong>Czy oferujecie diety dla wegan i wegetarian?</strong>
+                    – Tak, nasze plany dietetyczne można dostosować do różnych preferencji żywieniowych.
+                </li>
+                <li>
+                    <strong>Jak mogę anulować lub zmienić mój plan dietetyczny?</strong>
+                    – Możesz skontaktować się z nami bezpośrednio przez formularz kontaktowy lub telefonicznie.
+                </li>
+                <li>
+                    <strong>Czy mogę otrzymać próbny plan dietetyczny?</strong>
+                    – Oferujemy możliwość otrzymania próbnego planu, skontaktuj się z nami, aby uzyskać więcej informacji.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Zapisz się do newslettera</h2>
+            <form>
+                <label for="newsletter-email">Twój adres e-mail:</label>
+                <input type="email" id="newsletter-email" name="email" required />
+                <button type="submit">Zapisz się</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Eat & Fit Damian Torbus</p>
+    </footer>
+    <script src="javascript.js"></script>
+</body>
+</html>
